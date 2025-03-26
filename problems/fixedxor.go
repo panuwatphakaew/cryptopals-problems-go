@@ -22,7 +22,7 @@ func FixedXOR(input1 string, input2 string) (string, error) {
 
 	result := make([]byte, len(buffer1))
 
-	for i := 0; i < len(buffer1); i++ {
+	for i := range buffer1 {
 		result[i] = buffer1[i] ^ buffer2[i]
 	}
 
